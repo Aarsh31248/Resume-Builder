@@ -136,7 +136,18 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div>
+     <div className="relative min-h-screen">
+    {/* Background Image */}
+    <div
+      className="fixed inset-0 -z-10 pointer-events-none"
+      style={{
+        backgroundImage: "url('/bg.webp')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        opacity: 0.4,
+      }}
+    />
       <div className="max-w-7xl mx-auto px-4 py-8">
         <p className="text-2xl font-medium mb-6 bg-linear-to-r from-slate-600 to-slate-700 bg-clip-text text-transparent sm:hidden">
           Welcome, Aarsh Singh
@@ -292,7 +303,10 @@ const Dashboard = () => {
                 />
               </div>
 
-              <button disabled={isLoading} className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors flex items-center justify-center">
+              <button
+                disabled={isLoading}
+                className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700 transition-colors flex items-center justify-center"
+              >
                 {isLoading && (
                   <LoaderCircleIcon className="animate-spin size-4 text-white" />
                 )}
