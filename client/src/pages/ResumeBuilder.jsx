@@ -40,7 +40,7 @@ const ResumeBuilder = () => {
     professional_summary: "",
     experience: [],
     education: [],
-    project: [],
+    projects: [],
     skills: [],
     template: "classic",
     accent_color: "#3B82F6",
@@ -134,7 +134,6 @@ const ResumeBuilder = () => {
       });
 
       setResumeData(data.resume);
-      toast.success(data.message);
     } catch (error) {
       console.error("Error saving resume:", error);
     }
@@ -265,11 +264,11 @@ const ResumeBuilder = () => {
                 )}
                 {activeSection.id === "projects" && (
                   <ProjectForm
-                    data={resumeData.project}
+                    data={resumeData.projects}
                     onChange={(data) =>
                       setResumeData((prev) => ({
                         ...prev,
-                        project: data,
+                        projects: data,
                       }))
                     }
                   />

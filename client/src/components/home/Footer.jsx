@@ -62,9 +62,7 @@ const Footer = () => {
               <li>
                 <a href="/" className="hover:text-green-600 transition">
                   Careers
-                  <span className="text-xs text-white bg-green-600 rounded-md ml-2 px-2 py-1">
-                    We’re hiring!
-                  </span>
+                  
                 </a>
               </li>
               <li>
@@ -96,11 +94,7 @@ const Footer = () => {
             audience.
           </p>
           <div className="flex items-center gap-4 mt-3">
-            <a
-              href="https://dribbble.com/prebuiltui"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -121,7 +115,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="https://www.linkedin.com/company/prebuiltui"
+              href="https://www.linkedin.com/in/aarsh-singh-407a2b346/"
               target="_blank"
               rel="noreferrer"
             >
@@ -143,7 +137,7 @@ const Footer = () => {
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
             </a>
-            <a href="https://x.com/prebuiltui" target="_blank" rel="noreferrer">
+            <a target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -160,11 +154,7 @@ const Footer = () => {
                 <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
               </svg>
             </a>
-            <a
-              href="https://www.youtube.com/@prebuiltui"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
